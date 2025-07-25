@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+.border {
+  border-color: #e5e7eb;
+}
+
+button:focus {
+  outline: none;
+}
+
+aside {
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-card:hover img {
+  filter: brightness(0.9);
+}
+
+header {
+  background: linear-gradient(to right, #f23d3d, #ef4141);
+}
+
+/* Draggable video grid */
+.draggable {
+  scroll-behavior: smooth;
+  user-select: none;
+  cursor: grab;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
+
+/* Fade-in animation for video cards */
+.video-card {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
